@@ -1,0 +1,39 @@
+### get info
+GET http://localhost:3001/info
+
+### get all persons
+GET http://localhost:3001/api/persons
+
+### get a person
+GET http://localhost:3001/api/persons/695847a00f33a1c79357610e
+
+### update a person
+PUT http://localhost:3001/api/persons/695847a00f33a1c79357610e
+Content-Type: application/json
+
+{
+    "name": "1",
+    "number": "2"
+}
+
+### delete person
+DELETE http://localhost:3001/api/persons/6956c8944674fa072cb7ec8
+
+### create a person
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Jo",
+    "number": "12-382-19229292"
+}
+
+### create a invalid person
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "John Wick",
+    "number": "12-382-19229292"
+}
+
